@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="/static/css/style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Dashboard</h1>
+        <h2>Statistical Summary</h2>
+        {{ stats|safe }}
+        <h2>Visualizations</h2>
+        <h3>Histogram</h3>
+        {{ hist|safe }}
+        <h3>Scatter Plot</h3>
+        {{ scatter|safe }}
+        <h3>Boxplot</h3>
+        {{ box|safe }}
+        <h3>Heatmap</h3>
+        {{ heatmap|safe }}
+    </div>
+</body>
+</html>
